@@ -6,16 +6,14 @@ import Logo from './src/components/Logo';
 class App extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                {/*<ImageBackground style={styles.backgroundImage} source={require('./src/images/bg.png')}>*/}
-                    <StatusBar hidden />
-                    <Logo />
-                    <Form />
-                    <View style={styles.signUpContainer}>
-                        <Text style={styles.signUpText}>Don't have an account yet? Sign Up</Text>
-                    </View>
-                {/*</ImageBackground>*/}
-            </View>
+            <ImageBackground style={styles.container} source={require('./src/images/bg.png')}>
+                <StatusBar hidden />
+                <Logo />
+                <Form />
+                <View style={styles.signUpContainer}>
+                    <Text style={styles.signUpText}>Don't have an account yet? Sign Up</Text>
+                </View>
+            </ImageBackground>
         );
     }
 }
