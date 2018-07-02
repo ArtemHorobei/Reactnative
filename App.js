@@ -11,7 +11,8 @@ class App extends Component {
                 <Logo />
                 <Form />
                 <View style={styles.signUpContainer}>
-                    <Text style={styles.signUpText}>Don't have an account yet? Sign Up</Text>
+                    <Text style={styles.accountText}>Don't have an account yet? </Text>
+                    <Text style={styles.signUpText}>Sign Up</Text>
                 </View>
             </ImageBackground>
         );
@@ -33,11 +34,16 @@ const styles = StyleSheet.create({
         flexGrow: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'row',
+    },
+    accountText: {
+        fontSize: 10,
+        color: 'black',
     },
     signUpText: {
         fontSize: 10,
-        color: 'black',
-    }
+        color: 'white',
+    },
 });
 
 export default App;
