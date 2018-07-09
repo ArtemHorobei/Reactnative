@@ -12,6 +12,7 @@ class Form extends Component {
                     placeholder="Enter login"/>
                 <TextInput
                     style={styles.inputBox}
+                    secureTextEntry
                     placeholderTextColor="gray"
                     underlineColorAndroid="black"
                     placeholder="Enter password"/>
